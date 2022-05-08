@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  A method to add two points to team's score
      */
-    public void twoPoints(View view){
+    public void twoPointsTeamA(View view){
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
