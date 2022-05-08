@@ -34,7 +34,8 @@
         android:layout_margin="8dp"
         android:text="+2 Points"
         android:backgroundTint="@color/grey"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:onClick="twoPoints"/>
 
     <Button
         android:layout_width="match_parent"
