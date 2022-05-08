@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int score;
+    int scoreTeamA;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,24 +18,24 @@ public class MainActivity extends AppCompatActivity {
      *  A method to add three points to team's score
      */
     public void threePoints(View view){
-        score = score + 3;
-        displayForTeamA(score);
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      *  A method to add two points to team's score
      */
     public void twoPoints(View view){
-        score = score + 2;
-        displayForTeamA(score);
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
      *  A method to add one point to team's score
      */
     public void freThrow(View view){
-        score = score + 1;
-        displayForTeamA(score);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 
     /**
