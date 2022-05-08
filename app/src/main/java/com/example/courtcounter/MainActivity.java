@@ -15,6 +15,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     *  A method to add three points to team's score
+     */
+    public void threePoints(View view){
+        score = score + 3;
+        displayForTeamA(score);
+    }
+
+
+
+    /**
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
