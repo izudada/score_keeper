@@ -66,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     *  A method to add one point to team B's score
+     */
+    public void freThrowTeamB(View view){
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
