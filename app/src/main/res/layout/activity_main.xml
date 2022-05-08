@@ -44,5 +44,5 @@
         android:text="Free throw"
         android:backgroundTint="@color/grey"
         android:textColor="@color/black"
-        android:onClick="freThrow"/>
+        android:onClick="freThrowTeamA"/>
 </LinearLayout>
