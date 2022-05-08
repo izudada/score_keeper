@@ -22,7 +22,13 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(score);
     }
 
-
+    /**
+     *  A method to add two points to team's score
+     */
+    public void twoPoints(View view){
+        score = score + 2;
+        displayForTeamA(score);
+    }
 
     /**
      * Displays the given score for Team A.
