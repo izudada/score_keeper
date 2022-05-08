@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *  A method to add three points to team's score
+     *  A method to add three points to team A's score
      */
     public void threePointsTeamA(View view){
         scoreTeamA = scoreTeamA + 3;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *  A method to add two points to team's score
+     *  A method to add two points to team A's score
      */
     public void twoPointsTeamA(View view){
         scoreTeamA = scoreTeamA + 2;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *  A method to add one point to team's score
+     *  A method to add one point to team A's score
      */
     public void freThrowTeamA(View view){
         scoreTeamA = scoreTeamA + 1;
@@ -45,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
+    }
+
+
+
+    /**
+     *  A method to add three points to team B's score
+     */
+    public void threePointsTeamB(View view){
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
     }
 
     /**
