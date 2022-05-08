@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
 
+<!--    Layout for Team A -->
     <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -15,21 +15,21 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Team A" />
+            android:text="@string/team_a_label" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="4dp"
-            android:text="0"
+            android:text="@string/score_card"
             android:id="@+id/team_a_score"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="+3 Points"
+            android:text="@string/three_points"
             android:backgroundTint="@color/grey"
             android:textColor="@color/black"
             android:onClick="threePointsTeamA"/>
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="+2 Points"
+            android:text="@string/twopoints"
             android:backgroundTint="@color/grey"
             android:textColor="@color/black"
             android:onClick="twoPointsTeamA"/>
@@ -47,10 +47,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Free throw"
+            android:text="@string/free_throw"
             android:backgroundTint="@color/grey"
             android:textColor="@color/black"
             android:onClick="freThrowTeamA"/>
     </LinearLayout>
+
+
+<!--    Layout for Team B -->
+
+
 
 </LinearLayout>
