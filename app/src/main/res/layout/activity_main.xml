@@ -35,7 +35,7 @@
         android:text="+2 Points"
         android:backgroundTint="@color/grey"
         android:textColor="@color/black"
-        android:onClick="twoPoints"/>
+        android:onClick="twoPointsTeamA"/>
 
     <Button
         android:layout_width="match_parent"
