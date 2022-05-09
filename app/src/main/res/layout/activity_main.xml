@@ -28,7 +28,7 @@
                 android:padding="4dp"
                 android:textSize="14sp"
                 android:text="@string/team_a_label"
-                android:fontFamily="sans-serif-light"/>
+                android:fontFamily="sans-serif-medium"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,26 +43,29 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:text="@string/three_points"
                 android:textColor="@color/black"
-                android:onClick="threePointsTeamA"/>
+                android:onClick="threePointsTeamA"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:text="@string/two_points"
                 android:textColor="@color/black"
-                android:onClick="twoPointsTeamA"/>
+                android:onClick="twoPointsTeamA"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:text="@string/free_throw"
                 android:textColor="@color/black"
-                android:onClick="freThrowTeamA"/>
+                android:onClick="freThrowTeamA"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
         </LinearLayout>
 
         <!--    Divider    -->
@@ -85,7 +88,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="@string/team_b_label"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="14sp"/>
 
             <TextView
@@ -101,29 +104,32 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:text="@string/three_points"
                 android:backgroundTint="@color/grey"
                 android:textColor="@color/black"
-                android:onClick="threePointsTeamB"/>
+                android:onClick="threePointsTeamB"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:text="@string/two_points"
                 android:backgroundTint="@color/grey"
                 android:textColor="@color/black"
-                android:onClick="twoPointsTeamB"/>
+                android:onClick="twoPointsTeamB"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:text="@string/free_throw"
                 android:backgroundTint="@color/grey"
                 android:textColor="@color/black"
-                android:onClick="freThrowTeamB"/>
+                android:onClick="freThrowTeamB"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"/>
         </LinearLayout>
 
 
