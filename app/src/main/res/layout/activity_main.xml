@@ -1,109 +1,127 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center">
 
-
-<!--    Layout for Team A -->
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <!--  Horizontal LayoutView for both teams  -->
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="90dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/team_a_label" />
 
-        <TextView
-            android:layout_width="match_parent"
+        <!--    Layout for Team A -->
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/score_card"
-            android:id="@+id/team_a_score"/>
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/three_points"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:onClick="threePointsTeamA"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/team_a_label" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/two_points"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:onClick="twoPointsTeamA"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/score_card"
+                android:id="@+id/team_a_score"/>
 
-        <Button
-            android:layout_width="match_parent"
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/three_points"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:onClick="threePointsTeamA"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/two_points"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:onClick="twoPointsTeamA"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/free_throw"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:onClick="freThrowTeamA"/>
+        </LinearLayout>
+
+
+        <!--    Layout for Team B -->
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/free_throw"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:onClick="freThrowTeamA"/>
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/team_b_label" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/score_card"
+                android:id="@+id/team_b_score"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/three_points"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:onClick="threePointsTeamB"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/two_points"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:onClick="twoPointsTeamB"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/free_throw"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:onClick="freThrowTeamB"/>
+        </LinearLayout>
+
+
     </LinearLayout>
 
-
-<!--    Layout for Team B -->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/team_b_label" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/score_card"
-            android:id="@+id/team_b_score"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/three_points"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:onClick="threePointsTeamB"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/two_points"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:onClick="twoPointsTeamB"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/free_throw"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:onClick="freThrowTeamB"/>
-    </LinearLayout>
-
+        android:backgroundTint="@color/black"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:textColor="@color/white" />
 
 </LinearLayout>
