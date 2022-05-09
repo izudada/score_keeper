@@ -39,7 +39,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="@string/three_points"
-                android:backgroundTint="@color/grey"
                 android:textColor="@color/black"
                 android:onClick="threePointsTeamA"/>
 
@@ -48,7 +47,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="@string/two_points"
-                android:backgroundTint="@color/grey"
                 android:textColor="@color/black"
                 android:onClick="twoPointsTeamA"/>
 
@@ -57,7 +55,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="@string/free_throw"
-                android:backgroundTint="@color/grey"
                 android:textColor="@color/black"
                 android:onClick="freThrowTeamA"/>
         </LinearLayout>
