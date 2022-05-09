@@ -5,6 +5,7 @@
     <string name="three_points">+3 Points</string>
     <string name="two_points">+2 Points</string>
     <string name="free_throw">Free throw</string>
+    <string name="reset">Reset</string>
 
     <string name="team_b_label">Team B</string>
 </resources>
